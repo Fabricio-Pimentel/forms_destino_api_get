@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulários</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de Destinos</h1>
+            <p>Coloque as informações para definir sua próxima viajem!!</p>
+        </header>
+        <main>  
+            <section>
+                <p><a href="pages/get.html">Ir para historico de viajem</a></p>
+                <form id="form-destino">
+                <h2>Destino de Viagem</h2>
+
+                    <label for="title">Local:</label>
+                    <input id="title" name="title" type="text" minlength="3"  maxlength="100" required/>
+                    
+                    <label for="pais">País:</label>
+                    <input id="pais" name="pais" type="text" minlength="3"  maxlength="100" required/>
+                    
+                    <label for="tipo_destino">Tipo de Destino</label>
+                    <input id="tipo_destino" name="tipo_destino" type="text" required/>
+                    
+                    <label for="melhor_epoca">Melhor época:</label>
+                    <input id="melhor_epoca" name="melhor_epoca" type="text" required/>
+
+                    <label for="custo_medio">Custo médio:</label>
+                    <input id="custo_medio" name="custo_medio" type="number" required/>
+
+                    <label for="imageUrl">URL da imagem (opicional):</label>
+                    <input id="imageUrl" name="imageUrl" type="url"/>
+    
+                    <button type="submit">Enviar Destino de Viajem</button>
+                    <p id="resposta"></p>
+              </section>
+            </form>
+        </main>
+        <footer>
+            <p>Prática de formulário HTML</p>
+        </footer>
+    </body>
+</html>
